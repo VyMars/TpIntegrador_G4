@@ -231,37 +231,22 @@ body {
     
    
 
-   /* GALERIA TENDENCIAS */
-    
-  /* .contenedor-galeria{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-    
-    } 
-    
-    .img-galeria{
-        width: 20%;
-        display: inline-block;
-        margin-bottom: 35px;
-        margin-bottom: 35px;
-        box-shadow: 0 0  6px rgba(0, 0, 0, 0.5) ;
-        cursor: pointer;
-    
-    } */
-
     .galeria{
         width: 90%;
         max-width: 1000px;
         margin: 20px auto;
 
-
+      
     }
 
     .galeria .imagen{
         display: inline-block;
         width: 20%;
         margin: 10px 20px;
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
 
     }
 
@@ -269,5 +254,47 @@ body {
         width: 100%;
         vertical-align: top;
     }
+
+    .galeria .imagen .overlay{
+
+    }
+
+    .centrarboton{
+        height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    
+    
+    }
+
+
+    .botonBuscador {
+        background-color: #A569BD;
+        color: #ffffff;
+        display: inline-block;
+        height: 50px;
+        margin: 20px 10px;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 2px solid white;
+        text-align: center;
+
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+    }
+    
+    
+    
+    
 
 }
