@@ -228,4 +228,46 @@ body {
         background: #fff;
         margin-bottom: 60px;
     }
+    
+   
+
+   /* GALERIA TENDENCIAS */
+    
+  /* .contenedor-galeria{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    
+    } 
+    
+    .img-galeria{
+        width: 20%;
+        display: inline-block;
+        margin-bottom: 35px;
+        margin-bottom: 35px;
+        box-shadow: 0 0  6px rgba(0, 0, 0, 0.5) ;
+        cursor: pointer;
+    
+    } */
+
+    .galeria{
+        width: 90%;
+        max-width: 1000px;
+        margin: 20px auto;
+
+
+    }
+
+    .galeria .imagen{
+        display: inline-block;
+        width: 20%;
+        margin: 10px 20px;
+
+    }
+
+    .galeria img{
+        width: 100%;
+        vertical-align: top;
+    }
+
 }
