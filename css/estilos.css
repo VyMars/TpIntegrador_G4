@@ -50,6 +50,7 @@ body {
                     font-weight: 700;
                     font-size: 1.1rem;
                     padding: 0.5rem 1rem;
+                   
 
                     /* Agregar efecto de botón presionado */
                     transition: transform 0.3s, box-shadow 0.3s;
@@ -153,6 +154,7 @@ body {
             font-weight: 700;
             text-decoration: none;
 
+
             transition: transform 0.3s, box-shadow 0.3s;
 
             &:hover {
@@ -206,6 +208,7 @@ body {
                 font-weight: 700;
                 border: 2px solid white;
                 text-align: center;
+                cursor: pointer;
 
                 transition: transform 0.3s, box-shadow 0.3s;
 
@@ -284,6 +287,7 @@ body {
         font-weight: 700;
         border: 2px solid white;
         text-align: center;
+        cursor: pointer;
 
         transition: transform 0.3s, box-shadow 0.3s;
 
