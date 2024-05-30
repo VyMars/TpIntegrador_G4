@@ -17,7 +17,7 @@
 
 
 
-    <title>Login</title>
+    <title>Registrarse</title>
 </head>
 <body>
     <div class="container">
@@ -25,8 +25,15 @@
                    
         <div class="container_form">
             <img src="assets/img/LogoPelis.png" alt="esto es una imagen de fondo">
-            <h2>Iniciar Sesion</h2>
+            <h2>Registrarse</h2>
             <form id="form" action="">
+
+            <div>
+                <input autocomplete="off" type="text" placeholder="Nombre de usuario" id="usuario" name="usuario">
+                    
+            </div>
+
+                
               <div>
                 <input autocomplete="off" type="email" placeholder="Email" id="email" name="email">
                 
@@ -36,9 +43,14 @@
                 <input type="password" placeholder="Contraseña" id="contraseña" name="contra"> 
                                     
               </div>
+
+              <div>
+                <input type="password" placeholder="Confirmar contraseña" id="confirmar" name="confir"> 
+                                    
+              </div>
                  
 
-                 <a href="registrarse.html"> Registrarse </a>
+                 <a href=""> Registrarse </a>
                <!--  <button type="submit" class="boton"> Iniciar Sesion </button> -->
                  <input class="boton" type="submit" value="Iniciar Sesion"> 
                   <p class="advertencia" id="advertencia"></p>

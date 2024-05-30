@@ -1,5 +1,5 @@
 
-
+const usuario = document.getElementById("usuario");
 const email = document.getElementById("email");
 const contraseña = document.getElementById("contraseña");
 const form = document.getElementById("form");
@@ -21,6 +21,11 @@ form.addEventListener("submit", e=>{
        advertencia += `-La contraseña debe ser mas larga <br>`    
        entrar = true;
     }
+
+    if(usuario.value.length <=3 ){
+        advertencia += `-Ingrese un Usuario valido <br>`    
+        entrar = true;
+     }
 
     if(entrar){
         parrafo.innerHTML = advertencia;
