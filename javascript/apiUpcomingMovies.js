@@ -58,4 +58,31 @@ function cargarPagAnterior(){
 document.querySelector('.anterior').addEventListener('click', cargarPagAnterior);
 document.querySelector('.siguiente').addEventListener('click', cargarPagSgte);
 
+//LLAMAR LA API
 llamarAPI(currentPage);
+
+
+//BOTON HACIA ARRIBA
+
+document.getElementById("button-up").addEventListener("click", scrollUp);
+
+function scrollUp(){
+    let currentScroll = document.documentElement.scroll||document.body.scrollTop;
+    if(currentScroll>0){
+        window.requestAnimationFrame(scrollUp);
+        window.scrollTo(0, currentScroll-(currentScroll/5));
+        buttonUp.style.transform = "scale(0)";
+    }
+
+}
+
+buttonUp=document.getElementById("button-up");
+
+window.onscroll = function(){
+    let scroll = document.documentElement.scrollTop;
+    if(scroll > 200){
+        buttonUp.style.transform = "scale(1)";
+    }else if(scroll < 200){
+        buttonUp.style.transform = "scale(0)";
+    }
+}
