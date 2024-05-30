@@ -275,7 +275,7 @@ body {
     }
 
 
-    .botonBuscador {
+    .botonBuscador{
         background-color: #A569BD;
         color: #ffffff;
         display: inline-block;
@@ -298,6 +298,52 @@ body {
 
     }
     
+
+    .anterior{
+        background-color: #A569BD;
+        color: #ffffff;
+        display: inline-block;
+        height: 50px;
+        margin: 20px 10px;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 2px solid white;
+        text-align: center;
+        cursor: pointer;
+
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+    }
+
+    .siguiente{
+        background-color: #A569BD;
+        color: #ffffff;
+        display: inline-block;
+        height: 50px;
+        margin: 20px 10px;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 2px solid white;
+        text-align: center;
+        cursor: pointer;
+
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+    }
     
 
 
