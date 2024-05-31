@@ -6,12 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon"  href="C:\Users\EQUIPO 2020\Documents\GitHub\JAVA_FRONTEND_TpIntegrador_G4\TpIntegrador_G4\assets\img\LogoPelis.png">
     <!-- hoja de estilos -->
-    
-
     <link rel="stylesheet" href="css/LoginEstilo.css">
-    <style type="text/css">
-        p { color: green; }
-       </style>
     
 
 
@@ -24,31 +19,37 @@
                        
                    
         <div class="container_form">
-            <img src="assets/img/LogoPelis.png" alt="esto es una imagen de fondo">
+          <a href="index.html">
+            <abbr title="Volver al home de la página">
+             <img src="assets/img/LogoPelis.png" alt="esto es una imagen de fondo">
+            </abbr>
+          </a>
             <h2>Iniciar Sesion</h2>
             <form id="form" action="">
-              <div>
+              <div >
                 <input autocomplete="off" type="email" placeholder="Email" id="email" name="email">
+                <div class="error-text"> </div>
                 
               </div>
                 
               <div>
-                <input type="password" placeholder="Contraseña" id="contraseña" name="contra"> 
+                <input type="password" placeholder="Contraseña" id="contraseña" name="contra">
+                <div class="error-text"> </div> 
                                     
               </div>
                  
 
-                 <a href="registrarse.html"> Registrarse </a>
+                 <a class="link" href="registrarse.html"> Registrarse </a>
                <!--  <button type="submit" class="boton"> Iniciar Sesion </button> -->
                  <input class="boton" type="submit" value="Iniciar Sesion"> 
-                  <p class="advertencia" id="advertencia"></p>
+               <!--   <p class="advertencia" id="advertencia"></p>
                   <p class="enviado" id="enviado"></p>
-                  
+               --> 
             </form>
             
         </div>
         </div>
-
-        <script src="javascript/validar.js"></script>
+       <div class="container"> home </div>
+        <script src="javascript/login_validation.js"></script>
 </body>
 </html>
