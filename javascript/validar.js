@@ -22,11 +22,11 @@ form.addEventListener("submit", e=>{
        entrar = true;
     }
 
-    if(usuario.value.length <=3 ){
+   /* if(usuario.value.length <=3 ){
         advertencia += `-Ingrese un Usuario valido <br>`    
         entrar = true;
      }
-
+*/
     if(entrar){
         parrafo.innerHTML = advertencia;
     }else{
