@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- iconos -->
+    <link rel="icon"  href="C:\Users\EQUIPO 2020\Documents\GitHub\JAVA_FRONTEND_TpIntegrador_G4\TpIntegrador_G4\assets\img\LogoPelis.png">
     <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
     <!-- fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
@@ -12,6 +13,7 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- hoja de estilos -->
     <link rel="stylesheet" href="css/estilos.css">
+   
     
     <title>CAC-MOVIES</title>
 </head>
@@ -24,9 +26,10 @@
                 <span>CAC-Movies</span>
             </a>
             <ul class="listaNav">
+                <li class="listaItem"><a href="apiUpcomingMovies.html" class="linkNav">API Proximas Pelis</a></li>
                 <li class="listaItem"><a href="#" class="linkNav">Tendencias</a></li>
-                <li class="listaItem"><a href="#" class="linkNav">Registrarse</a></li>
-                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
+                <li class="listaItem"><a href="registrarse.html" class="linkNav">Registrarse</a></li>
+                <li class="listaItem"><a href="Login.html" class="linkNav iniciarSesion">Iniciar Sesión</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +40,7 @@
                 en un solo lugar</h1>
             <h2 class="subtituloPrincipal">Disfruta donde quieras. <br>
                 Cancela en cualquier momento.</h2>
-            <a class="botonRegistrarse" href="#">Registrarse</a>
+            <a class="botonRegistrarse" href="registrarse.html">Registrarse</a>
         </section>
         <!-- BUSCADOR PRINCIPAL -->
         <section class="buscadorPrincipal">
@@ -50,7 +53,7 @@
         </section>
         <div class="line"></div>
         <!-- TENDENCIAS DE HOY -->
-        <section class="buscadorPrincipal">
+        <section class="centrarboton">
             <div>
                 <h2 class="tituloSection"> Las tendencias de hoy </h2>
             </div>
@@ -78,7 +81,7 @@
                   </div>
                   <div class="imagen">
                       <img src="assets/img/peli_7.jpg" class="img-galeria" >
-                    </div>
+                  </div>
                     <div class="imagen">
                       <img src="assets/img/peli_8.jpg" class="img-galeria" >
                     </div>
@@ -92,9 +95,55 @@
                 <input class="botonBuscador" type="submit" value="Siguiente">
             </div>
         </section>
+        <br>
+        <br>
         <div class="line"></div>
+        
+
+<!--CARROUSEL-->
+  <!--CARRUSEL 3-->
+        
+  <section>
+    <div class="centrarboton">
+        <h2 class="tituloSection"> Las más aclamadas </h2>
+    </div>
+    <div class="carrusell">
+        <div class="carrusel-items">
+                <div class="carrusel-item">
+                  <img src="assets/img/aclamada_10.jpg" class="" >
+                </div>
+                <div class="carrusel-item">
+                    <img src="assets/img/aclamada_11.jpg" class="" >
+                  </div>
+                  <div class="carrusel-item">
+                    <img src="assets/img/aclamada_12.jpg" class="" >
+                  </div>
+                  <div class="carrusel-item">
+                    <img src="assets/img/aclamada_5.jpg" class="" >
+                  </div>
+                  <div class="carrusel-item">
+                    <img src="assets/img/aclamada_9.jpg" class="" >
+                  </div>
+                  
+                  <div class="carrusel-item">
+                    <img src="assets/img/aclamada_8.jpg" class="" >
+                  </div>
+                  <div class="carrusel-item">
+                      <img src="assets/img/aclamada_7.jpg" class="" >
+                  </div>
+                    <div class="carrusel-item">
+                      <img src="assets/img/aclamada_6.jpg" class="" >
+                    </div>
+            </div>
+    </div>
+    
+</section>
+<br>
+<br>
 
     </main>
+
+    <!--FOOTER-->
     <footer class="header">
         <nav class="navegacion">
             <a href="#" class="anclaLogo">
@@ -105,12 +154,12 @@
                 <li class="listaItem"><a href="#" class="linkNav">Términos y condiciones</a></li>
                 <li class="listaItem"><a href="#" class="linkNav">Preguntas frecuentes</a></li>
                 <li class="listaItem"><a href="#" class="linkNav">Ayuda</a></li>
-                <li class="listaItem"><a href="#" class="linkNav iniciarSesion">Administrador peliculas</a></li>
+                <li class="listaItem"><a href="index.hmtl" class="linkNav iniciarSesion">Administrador peliculas</a></li>
             </ul>
         </nav>
     </footer>
     
-     
+    <script src="javascript/carrusel.js"></script>
 </body>
 
 

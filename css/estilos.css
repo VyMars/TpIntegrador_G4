@@ -50,6 +50,7 @@ body {
                     font-weight: 700;
                     font-size: 1.1rem;
                     padding: 0.5rem 1rem;
+                   
 
                     /* Agregar efecto de botón presionado */
                     transition: transform 0.3s, box-shadow 0.3s;
@@ -153,6 +154,7 @@ body {
             font-weight: 700;
             text-decoration: none;
 
+
             transition: transform 0.3s, box-shadow 0.3s;
 
             &:hover {
@@ -206,6 +208,7 @@ body {
                 font-weight: 700;
                 border: 2px solid white;
                 text-align: center;
+                cursor: pointer;
 
                 transition: transform 0.3s, box-shadow 0.3s;
 
@@ -272,7 +275,7 @@ body {
     }
 
 
-    .botonBuscador {
+    .botonBuscador{
         background-color: #A569BD;
         color: #ffffff;
         display: inline-block;
@@ -284,6 +287,7 @@ body {
         font-weight: 700;
         border: 2px solid white;
         text-align: center;
+        cursor: pointer;
 
         transition: transform 0.3s, box-shadow 0.3s;
 
@@ -294,8 +298,130 @@ body {
 
     }
     
-    
-    
+
+    .anterior{
+        background-color: #A569BD;
+        color: #ffffff;
+        display: inline-block;
+        height: 50px;
+        margin: 20px 10px;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 2px solid white;
+        text-align: center;
+        cursor: pointer;
+
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+    }
+
+    .siguiente{
+        background-color: #A569BD;
+        color: #ffffff;
+        display: inline-block;
+        height: 50px;
+        margin: 20px 10px;
+        padding: 0 20px;
+        border-radius: 25px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        border: 2px solid white;
+        text-align: center;
+        cursor: pointer;
+
+        transition: transform 0.3s, box-shadow 0.3s;
+
+        &:hover {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+    }
+
+
     
 
+
+//CARRUSEL 2
+
+.carrusel {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+#imagen {
+    width: 90%;
+    height: 400px;
+    background-size: cover;
+}
+
+
+
+}
+
+// CARRUSEL 3
+.carrusell{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .carrusel-items{
+   display: flex;
+   overflow-x: scroll;
+   overflow-y: hidden;
+   overflow-x: hidden;
+   padding: 30px 0px;
+ }
+ 
+ .carrusel-item{
+     min-width: 200px;
+     max-width: 200px;
+     height: 300px;
+     outline: 2px solid black;
+ 
+ }
+ 
+ .carrusel-item img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ 
+ }
+ 
+ .carrusel-item:hover{
+     transform: scale(1.2);
+ }
+
+ //BOTON HACIA ARRIBA
+ 
+.button-up{
+    width: 60px;
+    height: 60px;
+    background:#A569BD ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition:all 300ms ease;
+    transform: scale(0);
+}
+
+.button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
 }
