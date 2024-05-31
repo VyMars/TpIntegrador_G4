@@ -43,7 +43,7 @@ body {
            
 
             /* Agregar efecto de botón presionado */
-            transition: transform 0.3s, box-shadow 0.3s;
+            transition: transform 0.3s, box-shadow 0.3s, rotate 2s;
 
             &:hover {
                 background-color: #6C3483;
@@ -446,9 +446,9 @@ body {
     border-color: rgba(0,0,0,0.1);
 }
 
-.anclaLogo:hover{
+/*.anclaLogo:hover{
   rotate: 180deg;
   background-color: #6C3483;
   transform: scale(0.95);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
+}*/
