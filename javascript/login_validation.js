@@ -95,11 +95,10 @@ function validarEmail(campoId, mensaje){
 //funcion para validar el formulario
 const validarFormulario = ()=>{
     let validar = true;
-   validar = validarCampo('usuario', 'debe ingresar un usuario') && validar;
+   
    validar = validarEmail('email', 'el email debe ser valido') && validar;
    validar = validarCampo('contraseña', 'la contraseña debe ser valida') && validar;
-   validar = validarCampo('confirmar', 'confirmar contraseña') && validar;
-    
+   
 return validar;
 
 }
